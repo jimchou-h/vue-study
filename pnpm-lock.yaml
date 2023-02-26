@@ -3,6 +3,9 @@ lockfileVersion: 5.4
 specifiers:
   '@commitlint/cli': ^16.2.3
   '@commitlint/config-conventional': ^16.2.1
+  '@element-plus/icons-vue': ^2.0.10
+  '@logicflow/core': ^1.1.31
+  '@logicflow/extension': ^1.1.31
   '@types/node': ^18.8.0
   '@typescript-eslint/eslint-plugin': ^5.38.0
   '@typescript-eslint/parser': ^5.38.0
@@ -36,6 +39,9 @@ specifiers:
   vue-tsc: ^0.40.4
 
 dependencies:
+  '@element-plus/icons-vue': registry.npmmirror.com/@element-plus/icons-vue/2.0.10_vue@3.2.47
+  '@logicflow/core': registry.npmmirror.com/@logicflow/core/1.1.31
+  '@logicflow/extension': registry.npmmirror.com/@logicflow/extension/1.1.31
   '@vueuse/core': registry.npmmirror.com/@vueuse/core/9.13.0_vue@3.2.47
   axios: registry.npmmirror.com/axios/0.27.2
   element-plus: registry.npmmirror.com/element-plus/2.2.32_vue@3.2.47
@@ -878,6 +884,26 @@ packages:
       '@jridgewell/sourcemap-codec': registry.npmmirror.com/@jridgewell/sourcemap-codec/1.4.14
     dev: true
 
+  registry.npmmirror.com/@logicflow/core/1.1.31:
+    resolution: {integrity: sha512-TQYJoxhqSzWBvw/NkI5hNZ8WkfS7JDLrvp56EU/OYo6Nbusj2n8/ya8XaMM50+GXqnp6+38t3RAGCC9Dk9cmhA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@logicflow/core/-/core-1.1.31.tgz}
+    name: '@logicflow/core'
+    version: 1.1.31
+    dependencies:
+      '@types/mousetrap': registry.npmmirror.com/@types/mousetrap/1.6.11
+      mousetrap: registry.npmmirror.com/mousetrap/1.6.5
+      preact: registry.npmmirror.com/preact/10.13.0
+    dev: false
+
+  registry.npmmirror.com/@logicflow/extension/1.1.31:
+    resolution: {integrity: sha512-MUDdP7Anf3OmIEVmJTlIH8e5h2yrdqlwWYCDjDoh9R1IOfzR4wCvEiH4HgOkadTsGtfaihFRyFnPIYT1cu7oUA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@logicflow/extension/-/extension-1.1.31.tgz}
+    name: '@logicflow/extension'
+    version: 1.1.31
+    dependencies:
+      '@logicflow/core': registry.npmmirror.com/@logicflow/core/1.1.31
+      ids: registry.npmmirror.com/ids/1.0.0
+      preact: registry.npmmirror.com/preact/10.13.0
+    dev: false
+
   registry.npmmirror.com/@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz}
     name: '@nodelib/fs.scandir'
@@ -982,6 +1008,12 @@ packages:
     name: '@types/minimist'
     version: 1.2.2
     dev: true
+
+  registry.npmmirror.com/@types/mousetrap/1.6.11:
+    resolution: {integrity: sha512-F0oAily9Q9QQpv9JKxKn0zMKfOo36KHCW7myYsmUyf2t0g+sBTbG3UleTPoguHdE1z3GLFr3p7/wiOio52QFjQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/mousetrap/-/mousetrap-1.6.11.tgz}
+    name: '@types/mousetrap'
+    version: 1.6.11
+    dev: false
 
   registry.npmmirror.com/@types/node/18.14.0:
     resolution: {integrity: sha512-5EWrvLmglK+imbCJY0+INViFWUHg1AHel1sq4ZVSfdcNqGy9Edv3UB9IIzzg+xPaUcAgZYcfVs2fBcwDeZzU0A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/node/-/node-18.14.0.tgz}
@@ -3446,6 +3478,12 @@ packages:
       safer-buffer: registry.npmmirror.com/safer-buffer/2.1.2
     dev: true
 
+  registry.npmmirror.com/ids/1.0.0:
+    resolution: {integrity: sha512-Zvtq1xUto4LttpstyOlFum8lKx+i1OmRfg+6A9drFS9iSZsDPMHG4Sof/qwNR4kCU7jBeWFPrY2ocHxiz7cCRw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/ids/-/ids-1.0.0.tgz}
+    name: ids
+    version: 1.0.0
+    dev: false
+
   registry.npmmirror.com/ieee754/1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/ieee754/-/ieee754-1.2.1.tgz}
     name: ieee754
@@ -4198,6 +4236,12 @@ packages:
       ufo: registry.npmmirror.com/ufo/1.1.0
     dev: true
 
+  registry.npmmirror.com/mousetrap/1.6.5:
+    resolution: {integrity: sha512-QNo4kEepaIBwiT8CDhP98umTetp+JNfQYBWvC1pc6/OAibuXtRcxZ58Qz8skvEHYvURne/7R8T5VoOI7rDsEUA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/mousetrap/-/mousetrap-1.6.5.tgz}
+    name: mousetrap
+    version: 1.6.5
+    dev: false
+
   registry.npmmirror.com/ms/2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/ms/-/ms-2.1.2.tgz}
     name: ms
@@ -4674,6 +4718,12 @@ packages:
       nanoid: registry.npmmirror.com/nanoid/3.3.4
       picocolors: registry.npmmirror.com/picocolors/1.0.0
       source-map-js: registry.npmmirror.com/source-map-js/1.0.2
+
+  registry.npmmirror.com/preact/10.13.0:
+    resolution: {integrity: sha512-ERdIdUpR6doqdaSIh80hvzebHB7O6JxycOhyzAeLEchqOq/4yueslQbfnPwXaNhAYacFTyCclhwkEbOumT0tHw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/preact/-/preact-10.13.0.tgz}
+    name: preact
+    version: 10.13.0
+    dev: false
 
   registry.npmmirror.com/prelude-ls/1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/prelude-ls/-/prelude-ls-1.2.1.tgz}

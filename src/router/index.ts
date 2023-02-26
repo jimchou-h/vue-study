@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import { adminRouter } from './admin.router'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -11,23 +12,7 @@ const routes: Array<RouteRecordRaw> = [
     },
     component: () => import('@/views/login/index.vue'),
   },
-  {
-    path: '/admin',
-    name: 'adminLayout',
-    component: () => import('@/layout/admin/index.vue'),
-    children: [
-      {
-        path: '/index',
-        name: 'Index',
-        meta: {
-          title: '首页',
-          keepAlive: true,
-          requireAuth: true,
-        },
-        component: () => import('@/views/index/index.vue'),
-      },
-    ],
-  },
+  ...adminRouter,
 ]
 
 const router = createRouter({

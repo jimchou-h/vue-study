@@ -27,6 +27,9 @@
     ]
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.0.10",
+    "@logicflow/core": "^1.1.31",
+    "@logicflow/extension": "^1.1.31",
     "@vueuse/core": "^9.3.0",
     "axios": "^0.27.2",
     "element-plus": "^2.2.17",
