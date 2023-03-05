@@ -1,7 +1,7 @@
 <template>
   <el-scrollbar style="height: calc(100vh - 60px)">
     <el-menu
-      :default-active="menus[0]?.path"
+      :default-active="defaultActiveRef"
       class="el-menu-vertical-demo"
       text-color="#ffffff"
       background-color="#000000"
@@ -9,16 +9,8 @@
       :collapse="isCollapse"
       :collapse-transition="false"
     >
-      <!-- <el-sub-menu index="1">
-        <template #title>
-          <el-icon><location /></el-icon>
-          <span>测试1</span>
-        </template>
-      </el-sub-menu> -->
       <el-menu-item v-for="menu of menus" :key="menu.path" :index="menu.path">
         <component :is="menu.iconCompName" class="w-[18px] h-[18px] mr-[8px]"></component>
-        <!-- <el-icon><fold /></el-icon> -->
-        <i class="iconfont"></i>
         <span>{{ menu.name }}</span>
       </el-menu-item>
     </el-menu>
@@ -27,10 +19,19 @@
 
 <script setup lang="ts">
 import { MenuItem } from '@/types/config'
+import { Ref, ref, watchEffect } from 'vue'
+import { useRoute } from 'vue-router'
 const props = defineProps<{
   isCollapse: boolean
   menus: MenuItem[]
 }>()
+
+const defaultActiveRef: Ref<string> = ref(props.menus[0]?.path)
+const route = useRoute()
+watchEffect(() => {
+  defaultActiveRef.value = route.fullPath
+  console.log(defaultActiveRef.value)
+})
 </script>
 
 <style lang="scss" scoped>
