@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import UsePinia from '@/components/usePinia.vue'
+import UsePinia from '@/components/use-pinia.vue'
 </script>
 
 <template>
@@ -8,7 +8,7 @@ import UsePinia from '@/components/usePinia.vue'
       <Fold style="fill: red"></Fold>
     </el-icon>
   </div>
-  <use-pinia></use-pinia>
+  <UsePinia color="red"></UsePinia>
 </template>
 
 <style lang="scss" scoped></style>

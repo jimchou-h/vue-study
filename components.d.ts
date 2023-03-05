@@ -26,6 +26,6 @@ declare module '@vue/runtime-core' {
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    UsePinia: typeof import('./src/components/usePinia.vue')['default']
+    UsePinia: typeof import('./src/components/use-pinia.vue')['default']
   }
 }

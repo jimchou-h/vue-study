@@ -40,6 +40,11 @@ const menus: MenuItem[] = reactive([
     path: '/admin/logic-flow',
     iconCompName: 'Edit',
   },
+  {
+    name: '自定义表单',
+    path: '/admin/custom-form',
+    iconCompName: 'Edit',
+  },
 ])
 
 const handleCollapse = () => {

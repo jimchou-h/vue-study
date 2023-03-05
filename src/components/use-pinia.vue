@@ -1,5 +1,8 @@
 <template>
-  <div>{{ userStore.name }}</div>
+  <div>
+    {{ userStore.name }}
+    {{ $attrs }}
+  </div>
 </template>
 
 <script setup lang="ts">

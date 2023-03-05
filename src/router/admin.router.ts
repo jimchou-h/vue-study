@@ -25,7 +25,17 @@ export const adminRouter: Array<RouteRecordRaw> = [
           keepAlive: true,
           requireAuth: true,
         },
-        component: () => import('@/views/logic-flow/logic-flow.vue'),
+        component: () => import('@/views/logic-flow/index.vue'),
+      },
+      {
+        path: 'custom-form',
+        name: 'CustomForm',
+        meta: {
+          title: '自定义表单',
+          keepAlive: true,
+          requireAuth: true,
+        },
+        component: () => import('@/views/custom-form/index.vue'),
       },
     ],
   },
