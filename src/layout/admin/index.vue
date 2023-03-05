@@ -35,11 +35,11 @@ const menus: MenuItem[] = reactive([
     path: '/admin/index',
     iconCompName: 'Edit',
   },
-  // {
-  //   name: '可视化拖拽',
-  //   path: '/admin/logic-flow',
-  //   iconCompName: 'Edit',
-  // },
+  {
+    name: '可视化拖拽',
+    path: '/admin/logic-flow',
+    iconCompName: 'Edit',
+  },
 ])
 
 const handleCollapse = () => {

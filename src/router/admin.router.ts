@@ -17,6 +17,16 @@ export const adminRouter: Array<RouteRecordRaw> = [
         },
         component: () => import('@/views/index/index.vue'),
       },
+      {
+        path: 'logic-flow',
+        name: 'LogicFlow',
+        meta: {
+          title: '可视化拖拽',
+          keepAlive: true,
+          requireAuth: true,
+        },
+        component: () => import('@/views/logic-flow/logic-flow.vue'),
+      },
     ],
   },
 ]

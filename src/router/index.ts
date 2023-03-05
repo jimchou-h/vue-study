@@ -3,6 +3,10 @@ import { adminRouter } from './admin.router'
 
 const routes: Array<RouteRecordRaw> = [
   {
+    path: '/',
+    redirect: '/admin',
+  },
+  {
     path: '/login',
     name: 'Login',
     meta: {

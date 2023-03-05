@@ -31,7 +31,6 @@ const props = defineProps<{
   isCollapse: boolean
   menus: MenuItem[]
 }>()
-console.log(props.isCollapse)
 </script>
 
 <style lang="scss" scoped>
