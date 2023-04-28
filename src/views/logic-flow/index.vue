@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import LogicFlow from '@logicflow/core'
+import LogicFlow, { Definition } from '@logicflow/core'
 import { DndPanel, SelectionSelect } from '@logicflow/extension'
 import '@logicflow/core/dist/style/index.css'
 import '@logicflow/extension/lib/style/index.css'
@@ -23,11 +23,12 @@ const lfRenderData: any = {
   ],
 }
 const lfInit = () => {
-  lf = new LogicFlow({
+  const options: Definition = {
     container: containerRef.value as any,
     grid: true,
     plugins: [DndPanel, SelectionSelect],
-  })
+  }
+  lf = new LogicFlow(options)
   lf.register(htmlNodeBox)
   lf.extension.dndPanel.setPatternItems([
     {

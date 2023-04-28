@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import { adminRouter } from './admin.router'
+import { commonRouter } from './common.router'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -17,6 +18,7 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/login/index.vue'),
   },
   ...adminRouter,
+  ...commonRouter,
 ]
 
 const router = createRouter({

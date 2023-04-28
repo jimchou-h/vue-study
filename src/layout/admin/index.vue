@@ -45,6 +45,11 @@ const menus: MenuItem[] = reactive([
     path: '/admin/custom-form',
     iconCompName: 'Edit',
   },
+  {
+    name: '可视化大屏',
+    path: '/admin/big-screen',
+    iconCompName: 'Edit',
+  },
 ])
 
 const handleCollapse = () => {
