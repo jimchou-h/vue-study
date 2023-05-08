@@ -5,10 +5,7 @@ import { PropType, nextTick, onMounted, onUnmounted, ref } from 'vue'
 const props = defineProps({
   options: {
     type: Object as PropType<ScreenContainerOptions>,
-    default: () => ({
-      width: 1920,
-      height: 1080,
-    }),
+    default: () => ({}),
   },
 })
 
@@ -58,12 +55,28 @@ const updateScale = () => {
   // 获取大屏最终真实的宽度
   const realWidth = widthRef.value || screenWidthRef.value
 
+  // 是否开启屏幕适配，不会按照比例
+  const { screenFit } = props.options
+  // 如果不想屏幕留白，而是自适应宽高的话
+  let heightScale = 1
+  // window.innerWidth 获取当前展示区域的宽度
+  const currentHeight = window.innerHeight
+  // 获取大屏最终真实的宽度
+  const realHeight = heightRef.value || heightRef.value
+  if (screenFit) {
+    heightScale = currentHeight / realHeight
+    // if (parentDom) {
+    //   parentDom.style.height = dom.style.height = `${window.innerHeight}px` // 父容器宽度设置为原屏幕的宽度
+    // }
+  }
+
   // 算出缩放比例并赋值
   // 只需要根据宽度计算即可
   const scale = currentWidth / realWidth
-  dom && (dom.style.transform = `scale(${scale})`)
+  dom && (dom.style.transform = `scale(${scale}, ${screenFit ? heightScale : scale})`)
   if (parentDom) {
-    parentDom.style.width = window.innerWidth // 父容器宽度设置为原屏幕的宽度
+    parentDom.style.width = `${window.innerWidth}px` // 父容器宽度设置为原屏幕的宽度
+    screenFit && (parentDom.style.height = `${window.innerHeight}px`) // 父容器宽度设置为原屏幕的宽度
   }
 }
 // 浏览器resize事件触发回调
@@ -91,7 +104,7 @@ onUnmounted(() => {
     id="screen-container-parent"
     ref="refNameParent"
     class="overflow-hidden"
-    style="overflow-y: auto"
+    :style="{ 'overflow-y': props.options.screenFit ? 'hidden' : 'auto' }"
   >
     <div id="screen-container" ref="refName" class="origin-[0%_0%]">
       <template v-if="isReady">
