@@ -1,5 +1,11 @@
 <script setup lang="ts">
 import UsePinia from '@/components/UsePinia.vue'
+import { localStorage } from '@/util/storage'
+import { ref } from 'vue'
+
+localStorage.set('name', '张三1')
+
+const nameRef = ref(localStorage.get('name'))
 </script>
 
 <template>
@@ -8,6 +14,7 @@ import UsePinia from '@/components/UsePinia.vue'
       <Fold style="fill: red"></Fold>
     </el-icon>
   </div>
+  {{ nameRef }}
   <UsePinia color="red"></UsePinia>
 </template>
 
