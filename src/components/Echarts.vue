@@ -4,9 +4,23 @@ import { ECBasicOption } from 'echarts/types/dist/shared'
 import { use } from 'echarts/core'
 import { CanvasRenderer } from 'echarts/renderers'
 import { PieChart } from 'echarts/charts'
-import { TitleComponent, TooltipComponent, LegendComponent } from 'echarts/components'
+import {
+  TitleComponent,
+  TooltipComponent,
+  LegendComponent,
+  GridComponent,
+} from 'echarts/components'
+import { LineChart } from 'echarts/charts'
 import VChart, { THEME_KEY } from 'vue-echarts'
-use([CanvasRenderer, PieChart, TitleComponent, TooltipComponent, LegendComponent])
+use([
+  CanvasRenderer,
+  PieChart,
+  TitleComponent,
+  TooltipComponent,
+  LegendComponent,
+  GridComponent,
+  LineChart,
+])
 
 provide(THEME_KEY, 'light')
 
@@ -28,6 +42,6 @@ const props = defineProps({
 
 <template>
   <div class="chart-container" :style="{ width, height }">
-    <VChart :option="props.option" :resize="true" />
+    <VChart class="w-full h-full" :option="props.option" :autoresize="true" />
   </div>
 </template>

@@ -1,8 +1,14 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import ScreenContainer from '@/components/ScreenContainer.vue'
 import screenfull from 'screenfull'
+import ScreenContainer from '@/components/ScreenContainer.vue'
 import MapChart from './components/map-chart.vue'
+import LeftChart from './components/left-chart.vue'
+import RightChart from './components/right-chart.vue'
+
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
 
 // 全屏
 const isFullscreenRef = ref(false)
@@ -11,7 +17,9 @@ const toggleFullScreen = () => {
   screenfull.toggle()
 }
 
-// 获取高度
+const handleReturn = () => {
+  router.push('/admin/index')
+}
 </script>
 
 <template>
@@ -24,28 +32,28 @@ const toggleFullScreen = () => {
             src="@/views/big-screen/imgs/screen_title.png"
             alt=""
           />
-          <div class="custom-button right-[110px]">
-            <el-icon style="margin-right: 5px">
-              <Upload />
-            </el-icon>
-            导出
-          </div>
-          <div class="custom-button right-[30px]" @click="toggleFullScreen">
+          <div class="custom-button right-[110px]" @click="toggleFullScreen">
             <el-icon style="margin-right: 5px">
               <FullScreen />
             </el-icon>
             {{ isFullscreenRef ? '退出全屏' : '全屏' }}
           </div>
+          <div class="custom-button right-[30px]" @click="handleReturn">
+            <el-icon style="margin-right: 5px">
+              <Upload />
+            </el-icon>
+            返回
+          </div>
         </div>
         <div class="page-inner flex p-[10px] h-[calc(100%-106px)]">
-          <div class="flex-1">
-            <left-chart></left-chart>
+          <div class="flex-[0_0_400px]">
+            <LeftChart></LeftChart>
           </div>
-          <div class="flex-[0_0_50vw] mx-[10px]">
+          <div class="flex-1 mx-[10px]">
             <MapChart></MapChart>
           </div>
-          <div class="flex-1">
-            <right-chart></right-chart>
+          <div class="flex-[0_0_400px]">
+            <RightChart></RightChart>
           </div>
         </div>
       </div>
