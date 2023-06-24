@@ -1,27 +1,4 @@
-<template>
-  <div class="common-layout">
-    <el-container class="min-h-screen">
-      <el-aside class="bg-primary text-white w-full" :width="asideWidthRef">
-        <div class="logo w-full h-[60px]"></div>
-        <Menu v-model:isCollapse="isCollapseRef" :menus="menus"></Menu>
-      </el-aside>
-      <el-container>
-        <el-header class="bg-primary leading-[60px]">
-          <div>
-            <el-icon class="align-middle" color="#ffffff" size="24px" @click="handleCollapse">
-              <Fold style="fill: red"></Fold>
-            </el-icon>
-          </div>
-        </el-header>
-        <el-main>
-          <router-view></router-view>
-        </el-main>
-      </el-container>
-    </el-container>
-  </div>
-</template>
-
-<script setup lang="ts">
+<script setup lang="ts" name="layout-admin-index">
 import { MenuItem } from '@/types/config'
 import { Ref, ref, nextTick, reactive } from 'vue'
 import Menu from './components/menu.vue'
@@ -64,6 +41,29 @@ const handleCollapse = () => {
   })
 }
 </script>
+
+<template>
+  <div class="common-layout">
+    <el-container class="min-h-screen">
+      <el-aside class="bg-primary text-white w-full" :width="asideWidthRef">
+        <div class="logo w-full h-[60px]"></div>
+        <Menu v-model:isCollapse="isCollapseRef" :menus="menus"></Menu>
+      </el-aside>
+      <el-container>
+        <el-header class="bg-primary leading-[60px]">
+          <div>
+            <el-icon class="align-middle" color="#ffffff" size="24px" @click="handleCollapse">
+              <Fold style="fill: red"></Fold>
+            </el-icon>
+          </div>
+        </el-header>
+        <el-main>
+          <router-view></router-view>
+        </el-main>
+      </el-container>
+    </el-container>
+  </div>
+</template>
 
 <style lang="scss" scoped>
 :deep(.el-aside) {

@@ -1,3 +1,19 @@
+<script setup lang="ts" name="menu">
+import { MenuItem } from '@/types/config'
+import { Ref, ref, watchEffect } from 'vue'
+import { useRoute } from 'vue-router'
+const props = defineProps<{
+  isCollapse: boolean
+  menus: MenuItem[]
+}>()
+
+const defaultActiveRef: Ref<string> = ref(props.menus[0]?.path)
+const route = useRoute()
+watchEffect(() => {
+  defaultActiveRef.value = route.fullPath
+})
+</script>
+
 <template>
   <el-scrollbar style="height: calc(100vh - 60px)">
     <el-menu
@@ -16,23 +32,6 @@
     </el-menu>
   </el-scrollbar>
 </template>
-
-<script setup lang="ts">
-import { MenuItem } from '@/types/config'
-import { Ref, ref, watchEffect } from 'vue'
-import { useRoute } from 'vue-router'
-const props = defineProps<{
-  isCollapse: boolean
-  menus: MenuItem[]
-}>()
-
-const defaultActiveRef: Ref<string> = ref(props.menus[0]?.path)
-const route = useRoute()
-watchEffect(() => {
-  defaultActiveRef.value = route.fullPath
-  console.log(defaultActiveRef.value)
-})
-</script>
 
 <style lang="scss" scoped>
 .el-menu-vertical-demo:not(.el-menu--collapse) {

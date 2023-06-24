@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup lang="ts" name="left-chart">
 import { ref } from 'vue'
 import CommonChartWrap from './CommonChartWrap.vue'
 import Echarts from '@/components/Echarts.vue'

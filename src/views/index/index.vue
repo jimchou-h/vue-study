@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup lang="ts" name="index">
 import UsePinia from '@/components/UsePinia.vue'
 import { localStorage } from '@/util/storage'
 import { onBeforeUnmount, onMounted, ref } from 'vue'

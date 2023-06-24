@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup lang="ts" name="common-chart-wrap">
 const props = defineProps({
   height: {
     type: [String, Number],

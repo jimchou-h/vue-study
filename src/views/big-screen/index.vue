@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup lang="ts" name="big-screen-index">
 import { useRouter } from 'vue-router'
 const router = useRouter()
 

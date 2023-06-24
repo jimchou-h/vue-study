@@ -2,7 +2,7 @@
   <div ref="containerRef" class="w-full h-[800px]"></div>
 </template>
 
-<script setup lang="ts">
+<script setup lang="ts" name="logic-flow-index">
 import LogicFlow, { Definition } from '@logicflow/core'
 import { DndPanel, SelectionSelect } from '@logicflow/extension'
 import '@logicflow/core/dist/style/index.css'

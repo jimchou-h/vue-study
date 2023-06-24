@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup lang="ts" name="data-chart">
 import { ref } from 'vue'
 import screenfull from 'screenfull'
 import ScreenContainer from '@/components/ScreenContainer.vue'

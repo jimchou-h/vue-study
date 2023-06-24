@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import { HtmlNodeModel, HtmlNode } from '@logicflow/core'
-import HtmlNodeComp from './html-node-comp.vue'
+import HtmlNodeComp from './HtmlNodeComp.vue'
 
 const htmlStyle = `
   width: 100%;

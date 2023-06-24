@@ -55,7 +55,7 @@ export const adminRouter: Array<RouteRecordRaw> = [
           keepAlive: true,
           requireAuth: true,
         },
-        component: () => import('@/views/d3/d3.vue'),
+        component: () => import('@/views/d3/index.vue'),
       },
     ],
   },

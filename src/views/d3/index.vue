@@ -1,4 +1,4 @@
-<script lang="ts">
+<script lang="ts" name="d3-index">
 import { defineComponent, onMounted, onUnmounted } from 'vue'
 import * as d3 from 'd3'
 
