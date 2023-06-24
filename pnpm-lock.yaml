@@ -51,6 +51,9 @@ devDependencies:
   '@commitlint/config-conventional':
     specifier: ^16.2.1
     version: registry.npmmirror.com/@commitlint/config-conventional@16.2.4
+  '@types/d3':
+    specifier: ^7.4.0
+    version: registry.npmmirror.com/@types/d3@7.4.0
   '@types/node':
     specifier: ^18.8.0
     version: registry.npmmirror.com/@types/node@18.14.0
@@ -81,6 +84,9 @@ devDependencies:
   cz-customizable:
     specifier: ^6.3.0
     version: registry.npmmirror.com/cz-customizable@6.9.2
+  d3:
+    specifier: ^7.8.4
+    version: registry.npmmirror.com/d3@7.8.4
   eslint:
     specifier: ^8.23.1
     version: registry.npmmirror.com/eslint@8.34.0
@@ -1023,10 +1029,257 @@ packages:
     version: 1.0.3
     dev: true
 
+  registry.npmmirror.com/@types/d3-array@3.0.4:
+    resolution: {integrity: sha512-nwvEkG9vYOc0Ic7G7kwgviY4AQlTfYGIZ0fqB7CQHXGyYM6nO7kJh5EguSNA3jfh4rq7Sb7eMVq8isuvg2/miQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-array/-/d3-array-3.0.4.tgz}
+    name: '@types/d3-array'
+    version: 3.0.4
+    dev: true
+
+  registry.npmmirror.com/@types/d3-axis@3.0.2:
+    resolution: {integrity: sha512-uGC7DBh0TZrU/LY43Fd8Qr+2ja1FKmH07q2FoZFHo1eYl8aj87GhfVoY1saJVJiq24rp1+wpI6BvQJMKgQm8oA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-axis/-/d3-axis-3.0.2.tgz}
+    name: '@types/d3-axis'
+    version: 3.0.2
+    dependencies:
+      '@types/d3-selection': registry.npmmirror.com/@types/d3-selection@3.0.5
+    dev: true
+
+  registry.npmmirror.com/@types/d3-brush@3.0.2:
+    resolution: {integrity: sha512-2TEm8KzUG3N7z0TrSKPmbxByBx54M+S9lHoP2J55QuLU0VSQ9mE96EJSAOVNEqd1bbynMjeTS9VHmz8/bSw8rA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-brush/-/d3-brush-3.0.2.tgz}
+    name: '@types/d3-brush'
+    version: 3.0.2
+    dependencies:
+      '@types/d3-selection': registry.npmmirror.com/@types/d3-selection@3.0.5
+    dev: true
+
+  registry.npmmirror.com/@types/d3-chord@3.0.2:
+    resolution: {integrity: sha512-abT/iLHD3sGZwqMTX1TYCMEulr+wBd0SzyOQnjYNLp7sngdOHYtNkMRI5v3w5thoN+BWtlHVDx2Osvq6fxhZWw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-chord/-/d3-chord-3.0.2.tgz}
+    name: '@types/d3-chord'
+    version: 3.0.2
+    dev: true
+
+  registry.npmmirror.com/@types/d3-color@3.1.0:
+    resolution: {integrity: sha512-HKuicPHJuvPgCD+np6Se9MQvS6OCbJmOjGvylzMJRlDwUXjKTTXs6Pwgk79O09Vj/ho3u1ofXnhFOaEWWPrlwA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-color/-/d3-color-3.1.0.tgz}
+    name: '@types/d3-color'
+    version: 3.1.0
+    dev: true
+
+  registry.npmmirror.com/@types/d3-contour@3.0.2:
+    resolution: {integrity: sha512-k6/bGDoAGJZnZWaKzeB+9glgXCYGvh6YlluxzBREiVo8f/X2vpTEdgPy9DN7Z2i42PZOZ4JDhVdlTSTSkLDPlQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-contour/-/d3-contour-3.0.2.tgz}
+    name: '@types/d3-contour'
+    version: 3.0.2
+    dependencies:
+      '@types/d3-array': registry.npmmirror.com/@types/d3-array@3.0.4
+      '@types/geojson': registry.npmmirror.com/@types/geojson@7946.0.10
+    dev: true
+
+  registry.npmmirror.com/@types/d3-delaunay@6.0.1:
+    resolution: {integrity: sha512-tLxQ2sfT0p6sxdG75c6f/ekqxjyYR0+LwPrsO1mbC9YDBzPJhs2HbJJRrn8Ez1DBoHRo2yx7YEATI+8V1nGMnQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-delaunay/-/d3-delaunay-6.0.1.tgz}
+    name: '@types/d3-delaunay'
+    version: 6.0.1
+    dev: true
+
+  registry.npmmirror.com/@types/d3-dispatch@3.0.2:
+    resolution: {integrity: sha512-rxN6sHUXEZYCKV05MEh4z4WpPSqIw+aP7n9ZN6WYAAvZoEAghEK1WeVZMZcHRBwyaKflU43PCUAJNjFxCzPDjg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-dispatch/-/d3-dispatch-3.0.2.tgz}
+    name: '@types/d3-dispatch'
+    version: 3.0.2
+    dev: true
+
+  registry.npmmirror.com/@types/d3-drag@3.0.2:
+    resolution: {integrity: sha512-qmODKEDvyKWVHcWWCOVcuVcOwikLVsyc4q4EBJMREsoQnR2Qoc2cZQUyFUPgO9q4S3qdSqJKBsuefv+h0Qy+tw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-drag/-/d3-drag-3.0.2.tgz}
+    name: '@types/d3-drag'
+    version: 3.0.2
+    dependencies:
+      '@types/d3-selection': registry.npmmirror.com/@types/d3-selection@3.0.5
+    dev: true
+
+  registry.npmmirror.com/@types/d3-dsv@3.0.1:
+    resolution: {integrity: sha512-76pBHCMTvPLt44wFOieouXcGXWOF0AJCceUvaFkxSZEu4VDUdv93JfpMa6VGNFs01FHfuP4a5Ou68eRG1KBfTw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-dsv/-/d3-dsv-3.0.1.tgz}
+    name: '@types/d3-dsv'
+    version: 3.0.1
+    dev: true
+
+  registry.npmmirror.com/@types/d3-ease@3.0.0:
+    resolution: {integrity: sha512-aMo4eaAOijJjA6uU+GIeW018dvy9+oH5Y2VPPzjjfxevvGQ/oRDs+tfYC9b50Q4BygRR8yE2QCLsrT0WtAVseA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-ease/-/d3-ease-3.0.0.tgz}
+    name: '@types/d3-ease'
+    version: 3.0.0
+    dev: true
+
+  registry.npmmirror.com/@types/d3-fetch@3.0.2:
+    resolution: {integrity: sha512-gllwYWozWfbep16N9fByNBDTkJW/SyhH6SGRlXloR7WdtAaBui4plTP+gbUgiEot7vGw/ZZop1yDZlgXXSuzjA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-fetch/-/d3-fetch-3.0.2.tgz}
+    name: '@types/d3-fetch'
+    version: 3.0.2
+    dependencies:
+      '@types/d3-dsv': registry.npmmirror.com/@types/d3-dsv@3.0.1
+    dev: true
+
+  registry.npmmirror.com/@types/d3-force@3.0.4:
+    resolution: {integrity: sha512-q7xbVLrWcXvSBBEoadowIUJ7sRpS1yvgMWnzHJggFy5cUZBq2HZL5k/pBSm0GdYWS1vs5/EDwMjSKF55PDY4Aw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-force/-/d3-force-3.0.4.tgz}
+    name: '@types/d3-force'
+    version: 3.0.4
+    dev: true
+
+  registry.npmmirror.com/@types/d3-format@3.0.1:
+    resolution: {integrity: sha512-5KY70ifCCzorkLuIkDe0Z9YTf9RR2CjBX1iaJG+rgM/cPP+sO+q9YdQ9WdhQcgPj1EQiJ2/0+yUkkziTG6Lubg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-format/-/d3-format-3.0.1.tgz}
+    name: '@types/d3-format'
+    version: 3.0.1
+    dev: true
+
+  registry.npmmirror.com/@types/d3-geo@3.0.3:
+    resolution: {integrity: sha512-bK9uZJS3vuDCNeeXQ4z3u0E7OeJZXjUgzFdSOtNtMCJCLvDtWDwfpRVWlyt3y8EvRzI0ccOu9xlMVirawolSCw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-geo/-/d3-geo-3.0.3.tgz}
+    name: '@types/d3-geo'
+    version: 3.0.3
+    dependencies:
+      '@types/geojson': registry.npmmirror.com/@types/geojson@7946.0.10
+    dev: true
+
+  registry.npmmirror.com/@types/d3-hierarchy@3.1.2:
+    resolution: {integrity: sha512-9hjRTVoZjRFR6xo8igAJyNXQyPX6Aq++Nhb5ebrUF414dv4jr2MitM2fWiOY475wa3Za7TOS2Gh9fmqEhLTt0A==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-hierarchy/-/d3-hierarchy-3.1.2.tgz}
+    name: '@types/d3-hierarchy'
+    version: 3.1.2
+    dev: true
+
+  registry.npmmirror.com/@types/d3-interpolate@3.0.1:
+    resolution: {integrity: sha512-jx5leotSeac3jr0RePOH1KdR9rISG91QIE4Q2PYTu4OymLTZfA3SrnURSLzKH48HmXVUru50b8nje4E79oQSQw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-interpolate/-/d3-interpolate-3.0.1.tgz}
+    name: '@types/d3-interpolate'
+    version: 3.0.1
+    dependencies:
+      '@types/d3-color': registry.npmmirror.com/@types/d3-color@3.1.0
+    dev: true
+
+  registry.npmmirror.com/@types/d3-path@3.0.0:
+    resolution: {integrity: sha512-0g/A+mZXgFkQxN3HniRDbXMN79K3CdTpLsevj+PXiTcb2hVyvkZUBg37StmgCQkaD84cUJ4uaDAWq7UJOQy2Tg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-path/-/d3-path-3.0.0.tgz}
+    name: '@types/d3-path'
+    version: 3.0.0
+    dev: true
+
+  registry.npmmirror.com/@types/d3-polygon@3.0.0:
+    resolution: {integrity: sha512-D49z4DyzTKXM0sGKVqiTDTYr+DHg/uxsiWDAkNrwXYuiZVd9o9wXZIo+YsHkifOiyBkmSWlEngHCQme54/hnHw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-polygon/-/d3-polygon-3.0.0.tgz}
+    name: '@types/d3-polygon'
+    version: 3.0.0
+    dev: true
+
+  registry.npmmirror.com/@types/d3-quadtree@3.0.2:
+    resolution: {integrity: sha512-QNcK8Jguvc8lU+4OfeNx+qnVy7c0VrDJ+CCVFS9srBo2GL9Y18CnIxBdTF3v38flrGy5s1YggcoAiu6s4fLQIw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-quadtree/-/d3-quadtree-3.0.2.tgz}
+    name: '@types/d3-quadtree'
+    version: 3.0.2
+    dev: true
+
+  registry.npmmirror.com/@types/d3-random@3.0.1:
+    resolution: {integrity: sha512-IIE6YTekGczpLYo/HehAy3JGF1ty7+usI97LqraNa8IiDur+L44d0VOjAvFQWJVdZOJHukUJw+ZdZBlgeUsHOQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-random/-/d3-random-3.0.1.tgz}
+    name: '@types/d3-random'
+    version: 3.0.1
+    dev: true
+
+  registry.npmmirror.com/@types/d3-scale-chromatic@3.0.0:
+    resolution: {integrity: sha512-dsoJGEIShosKVRBZB0Vo3C8nqSDqVGujJU6tPznsBJxNJNwMF8utmS83nvCBKQYPpjCzaaHcrf66iTRpZosLPw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-scale-chromatic/-/d3-scale-chromatic-3.0.0.tgz}
+    name: '@types/d3-scale-chromatic'
+    version: 3.0.0
+    dev: true
+
+  registry.npmmirror.com/@types/d3-scale@4.0.3:
+    resolution: {integrity: sha512-PATBiMCpvHJSMtZAMEhc2WyL+hnzarKzI6wAHYjhsonjWJYGq5BXTzQjv4l8m2jO183/4wZ90rKvSeT7o72xNQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-scale/-/d3-scale-4.0.3.tgz}
+    name: '@types/d3-scale'
+    version: 4.0.3
+    dependencies:
+      '@types/d3-time': registry.npmmirror.com/@types/d3-time@3.0.0
+    dev: true
+
+  registry.npmmirror.com/@types/d3-selection@3.0.5:
+    resolution: {integrity: sha512-xCB0z3Hi8eFIqyja3vW8iV01+OHGYR2di/+e+AiOcXIOrY82lcvWW8Ke1DYE/EUVMsBl4Db9RppSBS3X1U6J0w==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-selection/-/d3-selection-3.0.5.tgz}
+    name: '@types/d3-selection'
+    version: 3.0.5
+    dev: true
+
+  registry.npmmirror.com/@types/d3-shape@3.1.1:
+    resolution: {integrity: sha512-6Uh86YFF7LGg4PQkuO2oG6EMBRLuW9cbavUW46zkIO5kuS2PfTqo2o9SkgtQzguBHbLgNnU90UNsITpsX1My+A==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-shape/-/d3-shape-3.1.1.tgz}
+    name: '@types/d3-shape'
+    version: 3.1.1
+    dependencies:
+      '@types/d3-path': registry.npmmirror.com/@types/d3-path@3.0.0
+    dev: true
+
+  registry.npmmirror.com/@types/d3-time-format@4.0.0:
+    resolution: {integrity: sha512-yjfBUe6DJBsDin2BMIulhSHmr5qNR5Pxs17+oW4DoVPyVIXZ+m6bs7j1UVKP08Emv6jRmYrYqxYzO63mQxy1rw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-time-format/-/d3-time-format-4.0.0.tgz}
+    name: '@types/d3-time-format'
+    version: 4.0.0
+    dev: true
+
+  registry.npmmirror.com/@types/d3-time@3.0.0:
+    resolution: {integrity: sha512-sZLCdHvBUcNby1cB6Fd3ZBrABbjz3v1Vm90nysCQ6Vt7vd6e/h9Lt7SiJUoEX0l4Dzc7P5llKyhqSi1ycSf1Hg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-time/-/d3-time-3.0.0.tgz}
+    name: '@types/d3-time'
+    version: 3.0.0
+    dev: true
+
+  registry.npmmirror.com/@types/d3-timer@3.0.0:
+    resolution: {integrity: sha512-HNB/9GHqu7Fo8AQiugyJbv6ZxYz58wef0esl4Mv828w1ZKpAshw/uFWVDUcIB9KKFeFKoxS3cHY07FFgtTRZ1g==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-timer/-/d3-timer-3.0.0.tgz}
+    name: '@types/d3-timer'
+    version: 3.0.0
+    dev: true
+
+  registry.npmmirror.com/@types/d3-transition@3.0.3:
+    resolution: {integrity: sha512-/S90Od8Id1wgQNvIA8iFv9jRhCiZcGhPd2qX0bKF/PS+y0W5CrXKgIiELd2CvG1mlQrWK/qlYh3VxicqG1ZvgA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-transition/-/d3-transition-3.0.3.tgz}
+    name: '@types/d3-transition'
+    version: 3.0.3
+    dependencies:
+      '@types/d3-selection': registry.npmmirror.com/@types/d3-selection@3.0.5
+    dev: true
+
+  registry.npmmirror.com/@types/d3-zoom@3.0.2:
+    resolution: {integrity: sha512-t09DDJVBI6AkM7N8kuPsnq/3d/ehtRKBN1xSiYjjMCgbiw6HM6Ged5VhvswmhprfKyGvzeTEL/4WBaK9llWvlA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3-zoom/-/d3-zoom-3.0.2.tgz}
+    name: '@types/d3-zoom'
+    version: 3.0.2
+    dependencies:
+      '@types/d3-interpolate': registry.npmmirror.com/@types/d3-interpolate@3.0.1
+      '@types/d3-selection': registry.npmmirror.com/@types/d3-selection@3.0.5
+    dev: true
+
+  registry.npmmirror.com/@types/d3@7.4.0:
+    resolution: {integrity: sha512-jIfNVK0ZlxcuRDKtRS/SypEyOQ6UHaFQBKv032X45VvxSJ6Yi5G9behy9h6tNTHTDGh5Vq+KbmBjUWLgY4meCA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/d3/-/d3-7.4.0.tgz}
+    name: '@types/d3'
+    version: 7.4.0
+    dependencies:
+      '@types/d3-array': registry.npmmirror.com/@types/d3-array@3.0.4
+      '@types/d3-axis': registry.npmmirror.com/@types/d3-axis@3.0.2
+      '@types/d3-brush': registry.npmmirror.com/@types/d3-brush@3.0.2
+      '@types/d3-chord': registry.npmmirror.com/@types/d3-chord@3.0.2
+      '@types/d3-color': registry.npmmirror.com/@types/d3-color@3.1.0
+      '@types/d3-contour': registry.npmmirror.com/@types/d3-contour@3.0.2
+      '@types/d3-delaunay': registry.npmmirror.com/@types/d3-delaunay@6.0.1
+      '@types/d3-dispatch': registry.npmmirror.com/@types/d3-dispatch@3.0.2
+      '@types/d3-drag': registry.npmmirror.com/@types/d3-drag@3.0.2
+      '@types/d3-dsv': registry.npmmirror.com/@types/d3-dsv@3.0.1
+      '@types/d3-ease': registry.npmmirror.com/@types/d3-ease@3.0.0
+      '@types/d3-fetch': registry.npmmirror.com/@types/d3-fetch@3.0.2
+      '@types/d3-force': registry.npmmirror.com/@types/d3-force@3.0.4
+      '@types/d3-format': registry.npmmirror.com/@types/d3-format@3.0.1
+      '@types/d3-geo': registry.npmmirror.com/@types/d3-geo@3.0.3
+      '@types/d3-hierarchy': registry.npmmirror.com/@types/d3-hierarchy@3.1.2
+      '@types/d3-interpolate': registry.npmmirror.com/@types/d3-interpolate@3.0.1
+      '@types/d3-path': registry.npmmirror.com/@types/d3-path@3.0.0
+      '@types/d3-polygon': registry.npmmirror.com/@types/d3-polygon@3.0.0
+      '@types/d3-quadtree': registry.npmmirror.com/@types/d3-quadtree@3.0.2
+      '@types/d3-random': registry.npmmirror.com/@types/d3-random@3.0.1
+      '@types/d3-scale': registry.npmmirror.com/@types/d3-scale@4.0.3
+      '@types/d3-scale-chromatic': registry.npmmirror.com/@types/d3-scale-chromatic@3.0.0
+      '@types/d3-selection': registry.npmmirror.com/@types/d3-selection@3.0.5
+      '@types/d3-shape': registry.npmmirror.com/@types/d3-shape@3.1.1
+      '@types/d3-time': registry.npmmirror.com/@types/d3-time@3.0.0
+      '@types/d3-time-format': registry.npmmirror.com/@types/d3-time-format@4.0.0
+      '@types/d3-timer': registry.npmmirror.com/@types/d3-timer@3.0.0
+      '@types/d3-transition': registry.npmmirror.com/@types/d3-transition@3.0.3
+      '@types/d3-zoom': registry.npmmirror.com/@types/d3-zoom@3.0.2
+    dev: true
+
   registry.npmmirror.com/@types/estree@1.0.0:
     resolution: {integrity: sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/estree/-/estree-1.0.0.tgz}
     name: '@types/estree'
     version: 1.0.0
+    dev: true
+
+  registry.npmmirror.com/@types/geojson@7946.0.10:
+    resolution: {integrity: sha512-Nmh0K3iWQJzniTuPRcJn5hxXkfB1T1pgB89SBig5PlJQU5yocazeu4jATJlaA0GYFKWMqDdvYemoSnF2pXgLVA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/geojson/-/geojson-7946.0.10.tgz}
+    name: '@types/geojson'
+    version: 7946.0.10
     dev: true
 
   registry.npmmirror.com/@types/json-schema@7.0.11:
@@ -2082,6 +2335,13 @@ packages:
       delayed-stream: registry.npmmirror.com/delayed-stream@1.0.0
     dev: false
 
+  registry.npmmirror.com/commander@7.2.0:
+    resolution: {integrity: sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/commander/-/commander-7.2.0.tgz}
+    name: commander
+    version: 7.2.0
+    engines: {node: '>= 10'}
+    dev: true
+
   registry.npmmirror.com/commander@9.5.0:
     resolution: {integrity: sha512-KRs7WVDKg86PWiuAqhDrAQnTXZKraVcCc6vFdL14qrZ/DcWwuRo7VoiYXalXO7S5GKpqYiVEwCbgFDfxNHKJBQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/commander/-/commander-9.5.0.tgz}
     name: commander
@@ -2321,6 +2581,317 @@ packages:
       word-wrap: registry.npmmirror.com/word-wrap@1.2.3
     dev: true
 
+  registry.npmmirror.com/d3-array@3.2.3:
+    resolution: {integrity: sha512-JRHwbQQ84XuAESWhvIPaUV4/1UYTBOLiOPGWqgFDHZS1D5QN9c57FbH3QpEnQMYiOXNzKUQyGTZf+EVO7RT5TQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-array/-/d3-array-3.2.3.tgz}
+    name: d3-array
+    version: 3.2.3
+    engines: {node: '>=12'}
+    dependencies:
+      internmap: registry.npmmirror.com/internmap@2.0.3
+    dev: true
+
+  registry.npmmirror.com/d3-axis@3.0.0:
+    resolution: {integrity: sha512-IH5tgjV4jE/GhHkRV0HiVYPDtvfjHQlQfJHs0usq7M30XcSBvOotpmH1IgkcXsO/5gEQZD43B//fc7SRT5S+xw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-axis/-/d3-axis-3.0.0.tgz}
+    name: d3-axis
+    version: 3.0.0
+    engines: {node: '>=12'}
+    dev: true
+
+  registry.npmmirror.com/d3-brush@3.0.0:
+    resolution: {integrity: sha512-ALnjWlVYkXsVIGlOsuWH1+3udkYFI48Ljihfnh8FZPF2QS9o+PzGLBslO0PjzVoHLZ2KCVgAM8NVkXPJB2aNnQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-brush/-/d3-brush-3.0.0.tgz}
+    name: d3-brush
+    version: 3.0.0
+    engines: {node: '>=12'}
+    dependencies:
+      d3-dispatch: registry.npmmirror.com/d3-dispatch@3.0.1
+      d3-drag: registry.npmmirror.com/d3-drag@3.0.0
+      d3-interpolate: registry.npmmirror.com/d3-interpolate@3.0.1
+      d3-selection: registry.npmmirror.com/d3-selection@3.0.0
+      d3-transition: registry.npmmirror.com/d3-transition@3.0.1(d3-selection@3.0.0)
+    dev: true
+
+  registry.npmmirror.com/d3-chord@3.0.1:
+    resolution: {integrity: sha512-VE5S6TNa+j8msksl7HwjxMHDM2yNK3XCkusIlpX5kwauBfXuyLAtNg9jCp/iHH61tgI4sb6R/EIMWCqEIdjT/g==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-chord/-/d3-chord-3.0.1.tgz}
+    name: d3-chord
+    version: 3.0.1
+    engines: {node: '>=12'}
+    dependencies:
+      d3-path: registry.npmmirror.com/d3-path@3.1.0
+    dev: true
+
+  registry.npmmirror.com/d3-color@3.1.0:
+    resolution: {integrity: sha512-zg/chbXyeBtMQ1LbD/WSoW2DpC3I0mpmPdW+ynRTj/x2DAWYrIY7qeZIHidozwV24m4iavr15lNwIwLxRmOxhA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-color/-/d3-color-3.1.0.tgz}
+    name: d3-color
+    version: 3.1.0
+    engines: {node: '>=12'}
+    dev: true
+
+  registry.npmmirror.com/d3-contour@4.0.2:
+    resolution: {integrity: sha512-4EzFTRIikzs47RGmdxbeUvLWtGedDUNkTcmzoeyg4sP/dvCexO47AaQL7VKy/gul85TOxw+IBgA8US2xwbToNA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-contour/-/d3-contour-4.0.2.tgz}
+    name: d3-contour
+    version: 4.0.2
+    engines: {node: '>=12'}
+    dependencies:
+      d3-array: registry.npmmirror.com/d3-array@3.2.3
+    dev: true
+
+  registry.npmmirror.com/d3-delaunay@6.0.4:
+    resolution: {integrity: sha512-mdjtIZ1XLAM8bm/hx3WwjfHt6Sggek7qH043O8KEjDXN40xi3vx/6pYSVTwLjEgiXQTbvaouWKynLBiUZ6SK6A==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-delaunay/-/d3-delaunay-6.0.4.tgz}
+    name: d3-delaunay
+    version: 6.0.4
+    engines: {node: '>=12'}
+    dependencies:
+      delaunator: registry.npmmirror.com/delaunator@5.0.0
+    dev: true
+
+  registry.npmmirror.com/d3-dispatch@3.0.1:
+    resolution: {integrity: sha512-rzUyPU/S7rwUflMyLc1ETDeBj0NRuHKKAcvukozwhshr6g6c5d8zh4c2gQjY2bZ0dXeGLWc1PF174P2tVvKhfg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-dispatch/-/d3-dispatch-3.0.1.tgz}
+    name: d3-dispatch
+    version: 3.0.1
+    engines: {node: '>=12'}
+    dev: true
+
+  registry.npmmirror.com/d3-drag@3.0.0:
+    resolution: {integrity: sha512-pWbUJLdETVA8lQNJecMxoXfH6x+mO2UQo8rSmZ+QqxcbyA3hfeprFgIT//HW2nlHChWeIIMwS2Fq+gEARkhTkg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-drag/-/d3-drag-3.0.0.tgz}
+    name: d3-drag
+    version: 3.0.0
+    engines: {node: '>=12'}
+    dependencies:
+      d3-dispatch: registry.npmmirror.com/d3-dispatch@3.0.1
+      d3-selection: registry.npmmirror.com/d3-selection@3.0.0
+    dev: true
+
+  registry.npmmirror.com/d3-dsv@3.0.1:
+    resolution: {integrity: sha512-UG6OvdI5afDIFP9w4G0mNq50dSOsXHJaRE8arAS5o9ApWnIElp8GZw1Dun8vP8OyHOZ/QJUKUJwxiiCCnUwm+Q==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-dsv/-/d3-dsv-3.0.1.tgz}
+    name: d3-dsv
+    version: 3.0.1
+    engines: {node: '>=12'}
+    hasBin: true
+    dependencies:
+      commander: registry.npmmirror.com/commander@7.2.0
+      iconv-lite: registry.npmmirror.com/iconv-lite@0.6.3
+      rw: registry.npmmirror.com/rw@1.3.3
+    dev: true
+
+  registry.npmmirror.com/d3-ease@3.0.1:
+    resolution: {integrity: sha512-wR/XK3D3XcLIZwpbvQwQ5fK+8Ykds1ip7A2Txe0yxncXSdq1L9skcG7blcedkOX+ZcgxGAmLX1FrRGbADwzi0w==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-ease/-/d3-ease-3.0.1.tgz}
+    name: d3-ease
+    version: 3.0.1
+    engines: {node: '>=12'}
+    dev: true
+
+  registry.npmmirror.com/d3-fetch@3.0.1:
+    resolution: {integrity: sha512-kpkQIM20n3oLVBKGg6oHrUchHM3xODkTzjMoj7aWQFq5QEM+R6E4WkzT5+tojDY7yjez8KgCBRoj4aEr99Fdqw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-fetch/-/d3-fetch-3.0.1.tgz}
+    name: d3-fetch
+    version: 3.0.1
+    engines: {node: '>=12'}
+    dependencies:
+      d3-dsv: registry.npmmirror.com/d3-dsv@3.0.1
+    dev: true
+
+  registry.npmmirror.com/d3-force@3.0.0:
+    resolution: {integrity: sha512-zxV/SsA+U4yte8051P4ECydjD/S+qeYtnaIyAs9tgHCqfguma/aAQDjo85A9Z6EKhBirHRJHXIgJUlffT4wdLg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-force/-/d3-force-3.0.0.tgz}
+    name: d3-force
+    version: 3.0.0
+    engines: {node: '>=12'}
+    dependencies:
+      d3-dispatch: registry.npmmirror.com/d3-dispatch@3.0.1
+      d3-quadtree: registry.npmmirror.com/d3-quadtree@3.0.1
+      d3-timer: registry.npmmirror.com/d3-timer@3.0.1
+    dev: true
+
+  registry.npmmirror.com/d3-format@3.1.0:
+    resolution: {integrity: sha512-YyUI6AEuY/Wpt8KWLgZHsIU86atmikuoOmCfommt0LYHiQSPjvX2AcFc38PX0CBpr2RCyZhjex+NS/LPOv6YqA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-format/-/d3-format-3.1.0.tgz}
+    name: d3-format
+    version: 3.1.0
+    engines: {node: '>=12'}
+    dev: true
+
+  registry.npmmirror.com/d3-geo@3.1.0:
+    resolution: {integrity: sha512-JEo5HxXDdDYXCaWdwLRt79y7giK8SbhZJbFWXqbRTolCHFI5jRqteLzCsq51NKbUoX0PjBVSohxrx+NoOUujYA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-geo/-/d3-geo-3.1.0.tgz}
+    name: d3-geo
+    version: 3.1.0
+    engines: {node: '>=12'}
+    dependencies:
+      d3-array: registry.npmmirror.com/d3-array@3.2.3
+    dev: true
+
+  registry.npmmirror.com/d3-hierarchy@3.1.2:
+    resolution: {integrity: sha512-FX/9frcub54beBdugHjDCdikxThEqjnR93Qt7PvQTOHxyiNCAlvMrHhclk3cD5VeAaq9fxmfRp+CnWw9rEMBuA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-hierarchy/-/d3-hierarchy-3.1.2.tgz}
+    name: d3-hierarchy
+    version: 3.1.2
+    engines: {node: '>=12'}
+    dev: true
+
+  registry.npmmirror.com/d3-interpolate@3.0.1:
+    resolution: {integrity: sha512-3bYs1rOD33uo8aqJfKP3JWPAibgw8Zm2+L9vBKEHJ2Rg+viTR7o5Mmv5mZcieN+FRYaAOWX5SJATX6k1PWz72g==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-interpolate/-/d3-interpolate-3.0.1.tgz}
+    name: d3-interpolate
+    version: 3.0.1
+    engines: {node: '>=12'}
+    dependencies:
+      d3-color: registry.npmmirror.com/d3-color@3.1.0
+    dev: true
+
+  registry.npmmirror.com/d3-path@3.1.0:
+    resolution: {integrity: sha512-p3KP5HCf/bvjBSSKuXid6Zqijx7wIfNW+J/maPs+iwR35at5JCbLUT0LzF1cnjbCHWhqzQTIN2Jpe8pRebIEFQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-path/-/d3-path-3.1.0.tgz}
+    name: d3-path
+    version: 3.1.0
+    engines: {node: '>=12'}
+    dev: true
+
+  registry.npmmirror.com/d3-polygon@3.0.1:
+    resolution: {integrity: sha512-3vbA7vXYwfe1SYhED++fPUQlWSYTTGmFmQiany/gdbiWgU/iEyQzyymwL9SkJjFFuCS4902BSzewVGsHHmHtXg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-polygon/-/d3-polygon-3.0.1.tgz}
+    name: d3-polygon
+    version: 3.0.1
+    engines: {node: '>=12'}
+    dev: true
+
+  registry.npmmirror.com/d3-quadtree@3.0.1:
+    resolution: {integrity: sha512-04xDrxQTDTCFwP5H6hRhsRcb9xxv2RzkcsygFzmkSIOJy3PeRJP7sNk3VRIbKXcog561P9oU0/rVH6vDROAgUw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-quadtree/-/d3-quadtree-3.0.1.tgz}
+    name: d3-quadtree
+    version: 3.0.1
+    engines: {node: '>=12'}
+    dev: true
+
+  registry.npmmirror.com/d3-random@3.0.1:
+    resolution: {integrity: sha512-FXMe9GfxTxqd5D6jFsQ+DJ8BJS4E/fT5mqqdjovykEB2oFbTMDVdg1MGFxfQW+FBOGoB++k8swBrgwSHT1cUXQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-random/-/d3-random-3.0.1.tgz}
+    name: d3-random
+    version: 3.0.1
+    engines: {node: '>=12'}
+    dev: true
+
+  registry.npmmirror.com/d3-scale-chromatic@3.0.0:
+    resolution: {integrity: sha512-Lx9thtxAKrO2Pq6OO2Ua474opeziKr279P/TKZsMAhYyNDD3EnCffdbgeSYN5O7m2ByQsxtuP2CSDczNUIZ22g==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-scale-chromatic/-/d3-scale-chromatic-3.0.0.tgz}
+    name: d3-scale-chromatic
+    version: 3.0.0
+    engines: {node: '>=12'}
+    dependencies:
+      d3-color: registry.npmmirror.com/d3-color@3.1.0
+      d3-interpolate: registry.npmmirror.com/d3-interpolate@3.0.1
+    dev: true
+
+  registry.npmmirror.com/d3-scale@4.0.2:
+    resolution: {integrity: sha512-GZW464g1SH7ag3Y7hXjf8RoUuAFIqklOAq3MRl4OaWabTFJY9PN/E1YklhXLh+OQ3fM9yS2nOkCoS+WLZ6kvxQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-scale/-/d3-scale-4.0.2.tgz}
+    name: d3-scale
+    version: 4.0.2
+    engines: {node: '>=12'}
+    dependencies:
+      d3-array: registry.npmmirror.com/d3-array@3.2.3
+      d3-format: registry.npmmirror.com/d3-format@3.1.0
+      d3-interpolate: registry.npmmirror.com/d3-interpolate@3.0.1
+      d3-time: registry.npmmirror.com/d3-time@3.1.0
+      d3-time-format: registry.npmmirror.com/d3-time-format@4.1.0
+    dev: true
+
+  registry.npmmirror.com/d3-selection@3.0.0:
+    resolution: {integrity: sha512-fmTRWbNMmsmWq6xJV8D19U/gw/bwrHfNXxrIN+HfZgnzqTHp9jOmKMhsTUjXOJnZOdZY9Q28y4yebKzqDKlxlQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-selection/-/d3-selection-3.0.0.tgz}
+    name: d3-selection
+    version: 3.0.0
+    engines: {node: '>=12'}
+    dev: true
+
+  registry.npmmirror.com/d3-shape@3.2.0:
+    resolution: {integrity: sha512-SaLBuwGm3MOViRq2ABk3eLoxwZELpH6zhl3FbAoJ7Vm1gofKx6El1Ib5z23NUEhF9AsGl7y+dzLe5Cw2AArGTA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-shape/-/d3-shape-3.2.0.tgz}
+    name: d3-shape
+    version: 3.2.0
+    engines: {node: '>=12'}
+    dependencies:
+      d3-path: registry.npmmirror.com/d3-path@3.1.0
+    dev: true
+
+  registry.npmmirror.com/d3-time-format@4.1.0:
+    resolution: {integrity: sha512-dJxPBlzC7NugB2PDLwo9Q8JiTR3M3e4/XANkreKSUxF8vvXKqm1Yfq4Q5dl8budlunRVlUUaDUgFt7eA8D6NLg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-time-format/-/d3-time-format-4.1.0.tgz}
+    name: d3-time-format
+    version: 4.1.0
+    engines: {node: '>=12'}
+    dependencies:
+      d3-time: registry.npmmirror.com/d3-time@3.1.0
+    dev: true
+
+  registry.npmmirror.com/d3-time@3.1.0:
+    resolution: {integrity: sha512-VqKjzBLejbSMT4IgbmVgDjpkYrNWUYJnbCGo874u7MMKIWsILRX+OpX/gTk8MqjpT1A/c6HY2dCA77ZN0lkQ2Q==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-time/-/d3-time-3.1.0.tgz}
+    name: d3-time
+    version: 3.1.0
+    engines: {node: '>=12'}
+    dependencies:
+      d3-array: registry.npmmirror.com/d3-array@3.2.3
+    dev: true
+
+  registry.npmmirror.com/d3-timer@3.0.1:
+    resolution: {integrity: sha512-ndfJ/JxxMd3nw31uyKoY2naivF+r29V+Lc0svZxe1JvvIRmi8hUsrMvdOwgS1o6uBHmiz91geQ0ylPP0aj1VUA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-timer/-/d3-timer-3.0.1.tgz}
+    name: d3-timer
+    version: 3.0.1
+    engines: {node: '>=12'}
+    dev: true
+
+  registry.npmmirror.com/d3-transition@3.0.1(d3-selection@3.0.0):
+    resolution: {integrity: sha512-ApKvfjsSR6tg06xrL434C0WydLr7JewBB3V+/39RMHsaXTOG0zmt/OAXeng5M5LBm0ojmxJrpomQVZ1aPvBL4w==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-transition/-/d3-transition-3.0.1.tgz}
+    id: registry.npmmirror.com/d3-transition/3.0.1
+    name: d3-transition
+    version: 3.0.1
+    engines: {node: '>=12'}
+    peerDependencies:
+      d3-selection: 2 - 3
+    dependencies:
+      d3-color: registry.npmmirror.com/d3-color@3.1.0
+      d3-dispatch: registry.npmmirror.com/d3-dispatch@3.0.1
+      d3-ease: registry.npmmirror.com/d3-ease@3.0.1
+      d3-interpolate: registry.npmmirror.com/d3-interpolate@3.0.1
+      d3-selection: registry.npmmirror.com/d3-selection@3.0.0
+      d3-timer: registry.npmmirror.com/d3-timer@3.0.1
+    dev: true
+
+  registry.npmmirror.com/d3-zoom@3.0.0:
+    resolution: {integrity: sha512-b8AmV3kfQaqWAuacbPuNbL6vahnOJflOhexLzMMNLga62+/nh0JzvJ0aO/5a5MVgUFGS7Hu1P9P03o3fJkDCyw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3-zoom/-/d3-zoom-3.0.0.tgz}
+    name: d3-zoom
+    version: 3.0.0
+    engines: {node: '>=12'}
+    dependencies:
+      d3-dispatch: registry.npmmirror.com/d3-dispatch@3.0.1
+      d3-drag: registry.npmmirror.com/d3-drag@3.0.0
+      d3-interpolate: registry.npmmirror.com/d3-interpolate@3.0.1
+      d3-selection: registry.npmmirror.com/d3-selection@3.0.0
+      d3-transition: registry.npmmirror.com/d3-transition@3.0.1(d3-selection@3.0.0)
+    dev: true
+
+  registry.npmmirror.com/d3@7.8.4:
+    resolution: {integrity: sha512-q2WHStdhiBtD8DMmhDPyJmXUxr6VWRngKyiJ5EfXMxPw+tqT6BhNjhJZ4w3BHsNm3QoVfZLY8Orq/qPFczwKRA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/d3/-/d3-7.8.4.tgz}
+    name: d3
+    version: 7.8.4
+    engines: {node: '>=12'}
+    dependencies:
+      d3-array: registry.npmmirror.com/d3-array@3.2.3
+      d3-axis: registry.npmmirror.com/d3-axis@3.0.0
+      d3-brush: registry.npmmirror.com/d3-brush@3.0.0
+      d3-chord: registry.npmmirror.com/d3-chord@3.0.1
+      d3-color: registry.npmmirror.com/d3-color@3.1.0
+      d3-contour: registry.npmmirror.com/d3-contour@4.0.2
+      d3-delaunay: registry.npmmirror.com/d3-delaunay@6.0.4
+      d3-dispatch: registry.npmmirror.com/d3-dispatch@3.0.1
+      d3-drag: registry.npmmirror.com/d3-drag@3.0.0
+      d3-dsv: registry.npmmirror.com/d3-dsv@3.0.1
+      d3-ease: registry.npmmirror.com/d3-ease@3.0.1
+      d3-fetch: registry.npmmirror.com/d3-fetch@3.0.1
+      d3-force: registry.npmmirror.com/d3-force@3.0.0
+      d3-format: registry.npmmirror.com/d3-format@3.1.0
+      d3-geo: registry.npmmirror.com/d3-geo@3.1.0
+      d3-hierarchy: registry.npmmirror.com/d3-hierarchy@3.1.2
+      d3-interpolate: registry.npmmirror.com/d3-interpolate@3.0.1
+      d3-path: registry.npmmirror.com/d3-path@3.1.0
+      d3-polygon: registry.npmmirror.com/d3-polygon@3.0.1
+      d3-quadtree: registry.npmmirror.com/d3-quadtree@3.0.1
+      d3-random: registry.npmmirror.com/d3-random@3.0.1
+      d3-scale: registry.npmmirror.com/d3-scale@4.0.2
+      d3-scale-chromatic: registry.npmmirror.com/d3-scale-chromatic@3.0.0
+      d3-selection: registry.npmmirror.com/d3-selection@3.0.0
+      d3-shape: registry.npmmirror.com/d3-shape@3.2.0
+      d3-time: registry.npmmirror.com/d3-time@3.1.0
+      d3-time-format: registry.npmmirror.com/d3-time-format@4.1.0
+      d3-timer: registry.npmmirror.com/d3-timer@3.0.1
+      d3-transition: registry.npmmirror.com/d3-transition@3.0.1(d3-selection@3.0.0)
+      d3-zoom: registry.npmmirror.com/d3-zoom@3.0.0
+    dev: true
+
   registry.npmmirror.com/dargs@7.0.0:
     resolution: {integrity: sha512-2iy1EkLdlBzQGvbweYRFxmFath8+K7+AKB0TlhHWkNuH+TmovaMH/Wp7V7R4u7f4SnX3OgLsU9t1NI9ioDnUpg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/dargs/-/dargs-7.0.0.tgz}
     name: dargs
@@ -2389,6 +2960,14 @@ packages:
     resolution: {integrity: sha512-hsBd2qSVCRE+5PmNdHt1uzyrFu5d3RwmFDKzyNZMFq/EwDNJF7Ee5+D5oEKF0hU6LhtoUF1macFvOe4AskQC1Q==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/defined/-/defined-1.0.1.tgz}
     name: defined
     version: 1.0.1
+    dev: true
+
+  registry.npmmirror.com/delaunator@5.0.0:
+    resolution: {integrity: sha512-AyLvtyJdbv/U1GkiS6gUUzclRoAY4Gs75qkMygJJhU75LW4DNuSF2RMzpxs9jw9Oz1BobHjTdkG3zdP55VxAqw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/delaunator/-/delaunator-5.0.0.tgz}
+    name: delaunator
+    version: 5.0.0
+    dependencies:
+      robust-predicates: registry.npmmirror.com/robust-predicates@3.0.1
     dev: true
 
   registry.npmmirror.com/delayed-stream@1.0.0:
@@ -3550,6 +4129,15 @@ packages:
       safer-buffer: registry.npmmirror.com/safer-buffer@2.1.2
     dev: true
 
+  registry.npmmirror.com/iconv-lite@0.6.3:
+    resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/iconv-lite/-/iconv-lite-0.6.3.tgz}
+    name: iconv-lite
+    version: 0.6.3
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      safer-buffer: registry.npmmirror.com/safer-buffer@2.1.2
+    dev: true
+
   registry.npmmirror.com/ids@1.0.0:
     resolution: {integrity: sha512-Zvtq1xUto4LttpstyOlFum8lKx+i1OmRfg+6A9drFS9iSZsDPMHG4Sof/qwNR4kCU7jBeWFPrY2ocHxiz7cCRw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/ids/-/ids-1.0.0.tgz}
     name: ids
@@ -3662,6 +4250,13 @@ packages:
       strip-ansi: registry.npmmirror.com/strip-ansi@6.0.1
       through: registry.npmmirror.com/through@2.3.8
       wrap-ansi: registry.npmmirror.com/wrap-ansi@7.0.0
+    dev: true
+
+  registry.npmmirror.com/internmap@2.0.3:
+    resolution: {integrity: sha512-5Hh7Y1wQbvY5ooGgPbDaL5iYLAPzMTUrjMulskHLH6wnv/A+1q5rgEaiuqEjB+oxGXIVZs1FF+R/KPN3ZSQYYg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/internmap/-/internmap-2.0.3.tgz}
+    name: internmap
+    version: 2.0.3
+    engines: {node: '>=12'}
     dev: true
 
   registry.npmmirror.com/is-arrayish@0.2.1:
@@ -5039,6 +5634,12 @@ packages:
       glob: registry.npmmirror.com/glob@7.2.3
     dev: true
 
+  registry.npmmirror.com/robust-predicates@3.0.1:
+    resolution: {integrity: sha512-ndEIpszUHiG4HtDsQLeIuMvRsDnn8c8rYStabochtUeCvfuvNptb5TUbVD68LRAILPX7p9nqQGh4xJgn3EHS/g==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/robust-predicates/-/robust-predicates-3.0.1.tgz}
+    name: robust-predicates
+    version: 3.0.1
+    dev: true
+
   registry.npmmirror.com/rollup@2.79.1:
     resolution: {integrity: sha512-uKxbd0IhMZOhjAiD5oAFp7BqvkA4Dv47qpOCtaNvng4HBwdbWtdOh8f5nZNuk2rp51PMGk3bzfWu5oayNEuYnw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/rollup/-/rollup-2.79.1.tgz}
     name: rollup
@@ -5062,6 +5663,12 @@ packages:
     version: 1.2.0
     dependencies:
       queue-microtask: registry.npmmirror.com/queue-microtask@1.2.3
+    dev: true
+
+  registry.npmmirror.com/rw@1.3.3:
+    resolution: {integrity: sha512-PdhdWy89SiZogBLaw42zdeqtRJ//zFd2PgQavcICDUgJT5oW10QCRKbJ6bg4r0/UY2M6BWd5tkxuGFRvCkgfHQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/rw/-/rw-1.3.3.tgz}
+    name: rw
+    version: 1.3.3
     dev: true
 
   registry.npmmirror.com/rxjs@6.6.7:

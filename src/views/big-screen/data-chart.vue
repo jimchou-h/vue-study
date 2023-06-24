@@ -2,9 +2,9 @@
 import { ref } from 'vue'
 import screenfull from 'screenfull'
 import ScreenContainer from '@/components/ScreenContainer.vue'
-import MapChart from './components/map-chart.vue'
-import LeftChart from './components/left-chart.vue'
-import RightChart from './components/right-chart.vue'
+import MapChart from './components/MapChart.vue'
+import LeftChart from './components/LeftChart.vue'
+import RightChart from './components/RightChart.vue'
 
 import { useRouter } from 'vue-router'
 

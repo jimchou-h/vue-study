@@ -9,8 +9,9 @@ import {
   TooltipComponent,
   LegendComponent,
   GridComponent,
+  ToolboxComponent,
 } from 'echarts/components'
-import { LineChart } from 'echarts/charts'
+import { LineChart, FunnelChart, CustomChart } from 'echarts/charts'
 import VChart, { THEME_KEY } from 'vue-echarts'
 use([
   CanvasRenderer,
@@ -20,6 +21,9 @@ use([
   LegendComponent,
   GridComponent,
   LineChart,
+  ToolboxComponent,
+  FunnelChart,
+  CustomChart,
 ])
 
 provide(THEME_KEY, 'light')

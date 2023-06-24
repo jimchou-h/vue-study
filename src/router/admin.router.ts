@@ -47,6 +47,16 @@ export const adminRouter: Array<RouteRecordRaw> = [
         },
         component: () => import('@/views/big-screen/index.vue'),
       },
+      {
+        path: 'd3',
+        name: 'D3',
+        meta: {
+          title: 'D3',
+          keepAlive: true,
+          requireAuth: true,
+        },
+        component: () => import('@/views/d3/d3.vue'),
+      },
     ],
   },
   {

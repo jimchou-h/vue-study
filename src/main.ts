@@ -3,10 +3,13 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
+import { errorHandler } from '@/util/error'
 
 import '@/assets/css/index.css'
 
 const app = createApp(App)
+
+app.config.errorHandler = errorHandler
 
 app.use(store).use(router)
 

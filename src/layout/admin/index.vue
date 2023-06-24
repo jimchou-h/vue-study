@@ -50,6 +50,11 @@ const menus: MenuItem[] = reactive([
     path: '/admin/big-screen',
     iconCompName: 'Edit',
   },
+  {
+    name: 'D3',
+    path: '/admin/d3',
+    iconCompName: 'Edit',
+  },
 ])
 
 const handleCollapse = () => {

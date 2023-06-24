@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import CommonChartWrap from './common-chart-wrap.vue'
+import CommonChartWrap from './CommonChartWrap.vue'
 import Echarts from '@/components/Echarts.vue'
 
 const heightRef = ref('300px')
