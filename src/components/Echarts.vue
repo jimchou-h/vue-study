@@ -3,7 +3,7 @@ import { PropType, provide } from 'vue'
 import { ECBasicOption } from 'echarts/types/dist/shared'
 import { use } from 'echarts/core'
 import { CanvasRenderer } from 'echarts/renderers'
-import { PieChart } from 'echarts/charts'
+import { PieChart, LineChart, FunnelChart, CustomChart } from 'echarts/charts'
 import {
   TitleComponent,
   TooltipComponent,
@@ -11,7 +11,6 @@ import {
   GridComponent,
   ToolboxComponent,
 } from 'echarts/components'
-import { LineChart, FunnelChart, CustomChart } from 'echarts/charts'
 import VChart, { THEME_KEY } from 'vue-echarts'
 use([
   CanvasRenderer,
@@ -34,18 +33,18 @@ const props = defineProps({
     required: true,
   },
   width: {
-    type: [String, Number],
+    type: String,
     default: '100%',
   },
   height: {
-    type: [String, Number],
-    required: true,
+    type: String,
+    default: '400px',
   },
 })
 </script>
 
 <template>
   <div class="chart-container" :style="{ width, height }">
-    <VChart class="w-full h-full" :option="props.option" :autoresize="true" />
+    <VChart class="w-full h-full" :option="props.option" autoresize />
   </div>
 </template>

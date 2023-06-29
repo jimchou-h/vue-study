@@ -2,7 +2,7 @@
 import UsePinia from '@/components/UsePinia.vue'
 import { localStorage } from '@/util/storage'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
-import { debounce } from '@/util/util'
+import { debounce, showNotification } from '@/util/util'
 
 localStorage.set('name', '张三1')
 const nameRef = ref(localStorage.get('name'))
@@ -16,6 +16,11 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener('resize', handleScroll)
 })
+
+// 发送通知
+// const handleSendNotice = () => {
+//   showNotification('这是一个通知', '这是通知的正文内容', '')
+// }
 </script>
 
 <template>
@@ -26,6 +31,7 @@ onBeforeUnmount(() => {
   </div>
   {{ nameRef }}
   <UsePinia color="red"></UsePinia>
+  <!-- <el-button @click="handleSendNotice">发送通知</el-button> -->
 </template>
 
 <style lang="scss" scoped></style>
