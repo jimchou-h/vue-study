@@ -32,6 +32,17 @@ const menus: MenuItem[] = reactive([
     path: '/admin/d3',
     iconCompName: 'Edit',
   },
+  {
+    name: '功能',
+    iconCompName: 'Edit',
+    children: [
+      {
+        name: '大文件上传',
+        path: '/function/large-file-upload',
+        iconCompName: 'Edit',
+      },
+    ],
+  },
 ])
 
 const handleCollapse = () => {

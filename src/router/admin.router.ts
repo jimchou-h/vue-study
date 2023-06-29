@@ -57,6 +57,23 @@ export const adminRouter: Array<RouteRecordRaw> = [
         },
         component: () => import('@/views/d3/index.vue'),
       },
+      {
+        path: '/function',
+        name: 'Function',
+        redirect: '/function/index',
+        children: [
+          {
+            path: 'large-file-upload',
+            name: 'LargeFileUpload',
+            meta: {
+              title: 'LargeFileUpload',
+              keepAlive: true,
+              requireAuth: true,
+            },
+            component: () => import('@/views/function/large-file-upload/index.vue'),
+          },
+        ],
+      },
     ],
   },
   {

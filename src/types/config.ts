@@ -1,7 +1,8 @@
 export type MenuItem = {
   name: string
-  path: string
+  path?: string
   iconCompName: string
+  children?: MenuItem[]
 }
 
 export type ScreenContainerOptions = {

@@ -25,10 +25,22 @@ watchEffect(() => {
       :collapse="isCollapse"
       :collapse-transition="false"
     >
-      <el-menu-item v-for="menu of menus" :key="menu.path" :index="menu.path">
-        <component :is="menu.iconCompName" class="w-[18px] h-[18px] mr-[8px]"></component>
-        <span>{{ menu.name }}</span>
-      </el-menu-item>
+      <template v-for="menu of menus" :key="menu.path">
+        <el-menu-item v-if="!menu.children" :index="menu.path">
+          <component :is="menu.iconCompName" class="w-[18px] h-[18px] mr-[8px]"></component>
+          <span>{{ menu.name }}</span>
+        </el-menu-item>
+        <el-sub-menu v-else :index="menu.path">
+          <template #title>
+            <component :is="menu.iconCompName" class="w-[18px] h-[18px] mr-[8px]"></component>
+            <span>{{ menu.name }}</span>
+          </template>
+          <el-menu-item v-for="subMenu of menu.children" :key="subMenu.path" :index="subMenu.path">
+            <component :is="subMenu.iconCompName" class="w-[18px] h-[18px] mr-[8px]"></component>
+            <span>{{ subMenu.name }}</span>
+          </el-menu-item>
+        </el-sub-menu>
+      </template>
     </el-menu>
   </el-scrollbar>
 </template>
