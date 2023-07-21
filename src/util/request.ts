@@ -1,5 +1,7 @@
 import axios, { AxiosResponse, AxiosRequestConfig } from 'axios'
 
+axios.defaults.baseURL = 'http://localhost:3000'
+
 const service = axios.create()
 
 service.interceptors.request.use(
