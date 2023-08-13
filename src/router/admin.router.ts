@@ -72,6 +72,16 @@ export const adminRouter: Array<RouteRecordRaw> = [
             },
             component: () => import('@/views/function/large-file-upload/index.vue'),
           },
+          {
+            path: 'virtual-list',
+            name: 'VirtualList',
+            meta: {
+              title: 'VirtualList',
+              keepAlive: true,
+              requireAuth: true,
+            },
+            component: () => import('@/views/function/virtual-list/index.vue'),
+          },
         ],
       },
     ],

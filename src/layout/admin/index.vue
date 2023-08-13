@@ -41,6 +41,11 @@ const menus: MenuItem[] = reactive([
         path: '/function/large-file-upload',
         iconCompName: 'Edit',
       },
+      {
+        name: '虚拟列表',
+        path: '/function/virtual-list',
+        iconCompName: 'Edit',
+      },
     ],
   },
 ])

@@ -7,7 +7,7 @@ const props = defineProps<{
   menus: MenuItem[]
 }>()
 
-const defaultActiveRef: Ref<string> = ref(props.menus[0]?.path)
+const defaultActiveRef: Ref<string | undefined> = ref(props.menus[0]?.path)
 const route = useRoute()
 watchEffect(() => {
   defaultActiveRef.value = route.fullPath

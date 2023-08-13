@@ -12,6 +12,43 @@ export function debounce<T extends (...args: any[]) => any>(
   }
 }
 
+export const throttle = <T extends (...args: any[]) => void>(
+  func: T,
+  wait: number,
+  options: {
+    leading?: boolean
+    trailing?: boolean
+  } = {}
+) => {
+  let timeout: NodeJS.Timeout | null
+  let previous = 0
+
+  const { leading = true, trailing = true } = options
+
+  return function (this: any, ...args: Parameters<T>) {
+    const now = Date.now()
+    if (!previous && !leading) {
+      previous = now
+    }
+    const remaining = wait - (now - previous)
+
+    if (remaining <= 0 || remaining > wait) {
+      if (timeout) {
+        clearTimeout(timeout)
+        timeout = null
+      }
+      previous = now
+      func.apply(this, args)
+    } else if (!timeout && trailing) {
+      timeout = setTimeout(() => {
+        previous = leading ? Date.now() : 0
+        timeout = null
+        func.apply(this, args)
+      }, remaining)
+    }
+  }
+}
+
 // export function showNotification(
 //   title: string,
 //   body: string,
