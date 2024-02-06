@@ -33,6 +33,11 @@ const menus: MenuItem[] = reactive([
     iconCompName: 'Edit',
   },
   {
+    name: 'Konva',
+    path: '/admin/konva',
+    iconCompName: 'Edit',
+  },
+  {
     name: '功能',
     iconCompName: 'Edit',
     children: [
