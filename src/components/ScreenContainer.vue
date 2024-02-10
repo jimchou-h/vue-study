@@ -73,7 +73,7 @@ const updateScale = () => {
   // 算出缩放比例并赋值
   // 只需要根据宽度计算即可
   const scale = currentWidth / realWidth
-  dom && (dom.style.transform = `scale(${scale}, ${screenFit ? heightScale : scale})`)
+  dom && (dom.style.transform = `scale(${scale}, ${screenFit ? heightScale : 1})`) // 不开启screenFit的话高度不需要缩放
   if (parentDom) {
     parentDom.style.width = `${window.innerWidth}px` // 父容器宽度设置为原屏幕的宽度
     screenFit && (parentDom.style.height = `${window.innerHeight}px`) // 父容器宽度设置为原屏幕的宽度

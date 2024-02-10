@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { PropType, provide } from 'vue'
-import { ECBasicOption } from 'echarts/types/dist/shared'
+import type { ECBasicOption } from 'echarts/types/dist/shared'
 import { use } from 'echarts/core'
 import { CanvasRenderer } from 'echarts/renderers'
 import { PieChart, LineChart, FunnelChart, CustomChart } from 'echarts/charts'
