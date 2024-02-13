@@ -38,6 +38,11 @@ const menus: MenuItem[] = reactive([
     iconCompName: 'Edit',
   },
   {
+    name: 'Bpmn',
+    path: '/admin/bpmn',
+    iconCompName: 'Edit',
+  },
+  {
     name: '功能',
     iconCompName: 'Edit',
     children: [

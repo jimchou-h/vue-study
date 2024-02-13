@@ -20,6 +20,7 @@ const optionRef = ref({
   ],
 })
 
+
 // 定义漏斗图的数据
 const funnelData = [
   { value: 100, name: 'Step 1' },

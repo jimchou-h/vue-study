@@ -58,6 +58,26 @@ export const adminRouter: Array<RouteRecordRaw> = [
         component: () => import('@/views/d3/index.vue'),
       },
       {
+        path: 'konva',
+        name: 'Konva',
+        meta: {
+          title: 'Konva',
+          keepAlive: true,
+          requireAuth: true,
+        },
+        component: () => import('@/views/konva/index.vue'),
+      },
+      {
+        path: 'bpmn',
+        name: 'Bpmn',
+        meta: {
+          title: 'Bpmn',
+          keepAlive: true,
+          requireAuth: true,
+        },
+        component: () => import('@/views/bpmn/index.vue'),
+      },
+      {
         path: '/function',
         name: 'Function',
         redirect: '/function/index',
